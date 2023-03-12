@@ -1,0 +1,53 @@
+.container{
+    background-color: rgb(3, 15, 39);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    left: 800px;
+    
+    width: 700px;
+    max-width: 400px;
+    background-color:rgb(216,216,216);
+    height: 400px;
+}
+.L{
+    text-align: center;
+    color: rgb(24,39,71);
+    
+}
+.input-group {
+    margin:20px;
+}
+.btn-primary{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    --bs-btn-bg: #5b89cd;
+    --bs-btn-hover-bg: #05357a;
+}
+.link{
+    color:rgb(24,39,71);
+}
+
+@keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+  }
+
+  .container {
+    animation: drop-in 1000ms;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }

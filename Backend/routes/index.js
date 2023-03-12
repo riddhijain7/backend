@@ -29,11 +29,10 @@ function sendEmail(email, token) {
   });
 }
 /* home page */
-router.get('/', function (req, res, next) {
-  res.render('index', {
-    title: 'Express'
-  });
+router.get('/login', function (req, res, next) {
+  res.sendFile('C:\Users\Riddhi Jain\OneDrive\Desktop\IdeaProject\idea-lab\Frontend\src\Login.js')
 });
+
 /* send verification link */
 router.post('/send-email', function (req, res, next) {
   var email = req.body.email;
