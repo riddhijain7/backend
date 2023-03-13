@@ -28,9 +28,17 @@ function sendEmail(email, token) {
     }
   });
 }
+
+router.get('/', function (req, res, next) {
+  res.render('/view')
+  res.send('Welcome')
+  // res.sendFile('C:\Users\Riddhi Jain\OneDrive\Desktop\IdeaProject\idea-lab\Frontend\src\Login.js')
+});
+
 /* home page */
 router.get('/login', function (req, res, next) {
-  res.sendFile('C:\Users\Riddhi Jain\OneDrive\Desktop\IdeaProject\idea-lab\Frontend\src\Login.js')
+  res.send('login page')
+  // res.sendFile('C:\Users\Riddhi Jain\OneDrive\Desktop\IdeaProject\idea-lab\Frontend\src\Login.js')
 });
 
 /* send verification link */
